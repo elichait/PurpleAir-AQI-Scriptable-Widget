@@ -1,14 +1,18 @@
 # PurpleAir-AQI-Scriptable-Widget
 
-By Jason Snell <jsnell@sixcolors.com>
+<img src="https://sixcolors.com/wp-content/uploads/2020/10/widget-44.jpg" width="400" />
 
-With contributions by many others, including Matt Silverlock (whose code was the initial inspiration for this), Rob Silverii (who added the gradients and themes per AQI level), and Adam Lickel (who added some better JavaScript formatting and moved stuff into functions).
+By Jason Snell <jsnell@sixcolors.com> with enormous contributions by many others, including Matt Silverlock , Rob Silverii, Adam Lickel, Alexander Ogilvie, and Brian Donovan.
 
 ## About this project
 
-This script is meant to be used inside [Scriptable](https://scriptable.app) to generate iOS home screen widgets.
+This script is meant to be used inside [Scriptable](https://scriptable.app) to generate iOS home screen widgets. The trend line feature requires the latest Scriptable 1.5.1 beta. [Sign up for it here](https://testflight.apple.com/join/klHcZHjN).
 
 It uses data from the [PurpleAir network](https://www2.purpleair.com) of low-cost, consumer air quality sensors to display your local air quality, including AQI rating and trend.
+
+The EPA has a large, established network of air-quality sensors that feed into many weather apps and their assorted widgets. I built this tool because the nearest EPA sensor to me was three towns away and in heavy wildfire smoke conditions did not accurately reflect my local air quality.
+
+If you just want the official EPA numbers, you don't need this widget.
 
 ## Why doesn't this widget match what I see on PurpleAir's map?
 

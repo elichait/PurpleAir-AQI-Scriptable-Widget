@@ -274,15 +274,23 @@ async function run() {
 
     listWidget.addSpacer(5);
 
+    if (listWidget.addStack) {
       const scoreStack = listWidget.addStack()
+
       const content = scoreStack.addText(aqiText);
       content.textColor = textColor;
       content.font = Font.mediumSystemFont(30);
+
       const trendSymbol = createSymbol(aqiTrend);
       const trendImg = scoreStack.addImage(trendSymbol.image);
       trendImg.resizable = false;
       trendImg.tintColor = textColor;
       trendImg.imageSize = new Size(30, 38);
+    } else {
+      const content = listWidget.addText(aqiText);
+      content.textColor = textColor;
+      content.font = Font.mediumSystemFont(30);
+    }
 
     const wordLevel = listWidget.addText(level.label);
     wordLevel.textColor = textColor;
